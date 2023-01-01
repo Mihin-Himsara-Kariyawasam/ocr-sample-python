@@ -11,3 +11,8 @@ data = {'file': open(image_path, 'rb'),    'modelId': ('', model_id)}
 response = requests.post(url, auth=requests.auth.HTTPBasicAuth(api_key, ''), files=data)
 
 print(response.text)
+response_data = response.json()
+for i in response_data["result"]:
+    prediction = i["prediction"]
+    for j in prediction:
+        print (j["ocr_text"])
