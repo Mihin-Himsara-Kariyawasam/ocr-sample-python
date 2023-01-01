@@ -1,7 +1,7 @@
 import requests, os, json
   
 url = "https://app.nanonets.com/api/v2/ObjectDetection/Model/"
-api_key = os.environ.get('NANONETS_API_KEY')
+api_key = 'm-eSBQW6IQYI2bZ1-TqMdTrsSgHbl-N1'
 
 ##
 payload = "{\"categories\" : [\"number_plate\"], \"model_type\": \"ocr\"}"
